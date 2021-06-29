@@ -1,0 +1,12 @@
+a, b = map(int, input().split())
+
+a_s = str(a)
+b_s = str(b)
+
+a_r = int(''.join(reversed(a_s)))
+b_r = int(''.join(reversed(b_s)))
+
+if a_r - b_r > 0:
+    print(a_r)
+else:
+    print(b_r)
